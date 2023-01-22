@@ -1,3 +1,4 @@
+
 #container {
     display: flex;
     flex-direction: column;
@@ -6,10 +7,11 @@
     overflow-wrap: break-word;
 }
 
-h1 {
+header h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 h1 span {
@@ -22,7 +24,7 @@ h1 span {
 }
 
 ul {
-
+    margin-top: 0px;
     padding-inline-start: 0px;
 }
 
@@ -33,8 +35,11 @@ li {
     margin-left: 5px;
 }
 
-.nav {
-    
+.selfResize {
+    width: 13em;
+    height: 10em;
+    border-radius: 8px;
+    margin-right: 3em;
 }
 
 a {
@@ -49,4 +54,51 @@ a:hover {
     transition: all .3s ease;
     color: rgb(234, 201, 193);
     
+}
+
+#selections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+
+}
+
+.title {
+    margin-right: 5em;
+}
+
+.title p {
+    width: 5em;
+    font-size: 20px;
+}
+
+#bio {
+    display: flex;
+    justify-content: center;
+    overflow-wrap: break-word;
+    width: 45em;
+}
+
+#bio p {
+    display:flex;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    overflow-wrap: break-word;
+    width: 45em;
 }
