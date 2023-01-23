@@ -108,3 +108,40 @@ a {
     padding-top: 0px;
     font-size: 15px;
 }
+
+.post {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 500px;
+    height: 575px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    margin-top: 14px;
+    width: 230px;
+}
+
+.blogPicture {
+    width: 294px;
+    height: 245px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.startText {
+    line-height: 21px;
+    margin: 0px;
+    margin-top: 18px;
+}
+
+.mainText {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 0px;
+    line-height: 21px;
+}
