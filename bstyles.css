@@ -73,16 +73,17 @@ a {
 button {
     background-color: white;
     border: none;
+    margin-right: 11px;
 }
 
 .card {
     width: 250px;
     height: 320px;
-    border: 3px solid rgb(234, 201, 193);
+    border: 2px solid rgb(234, 201, 193);
     margin: 5px;
     margin-top: 8px;
     border-radius: 6px;
-    background-color: rgb(234, 201, 193);
+    background-color: rgb(238, 217, 212);
 }
 
 .blogPost {
@@ -161,6 +162,7 @@ button {
     padding-left: 7px;
     padding-right: 7px;
     margin-top: 0px;
+    margin-bottom: 15px;
     line-height: 31px;
     font-size: 25px;
 }

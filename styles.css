@@ -36,10 +36,15 @@ li {
 }
 
 .selfResize {
-    width: 13em;
-    height: 10em;
-    border-radius: 8px;
-    margin-right: 3em;
+    width: 9em;
+    height: 9em;
+    border-radius: 80px;
+    margin-right: 80px;
+    margin-top: 8px;
+}
+
+#about {
+    line-height: 22px;
 }
 
 li a {
