@@ -42,15 +42,14 @@ li {
     margin-right: 3em;
 }
 
-a {
+li a {
     text-decoration: none;
-    
     color: #333333;
     border-radius: 5px;
     padding: 2px 6px 2px 6px;   
 }
 
-a:hover {
+li a:hover {
     transition: all .3s ease;
     color: rgb(234, 201, 193);
     
