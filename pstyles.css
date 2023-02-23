@@ -70,6 +70,21 @@ a {
     width: 350px;
 }
 
+.dresize {
+    margin-left: 15px;
+    height: 280px;
+    width: 320px;
+}
+
+#top{
+    margin-top: 15px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .munResize {
     height: 250px;
     width: 270px;
