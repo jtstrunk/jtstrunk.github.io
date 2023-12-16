@@ -11,6 +11,8 @@ let ultimate = document.querySelector("#Ult");
 let climb = document.querySelector("#Rock")
 let phineas = document.querySelector("#Phin");
 let lords = document.querySelector("#Lords");
+let golf = document.querySelector("#Golf");
+let seaside = document.querySelector("#Seaside");
 
 
 let dominionPost = document.querySelector("#domiPost");
@@ -19,6 +21,7 @@ let ultimatePost = document.querySelector("#ultimatePost");
 let climbPost = document.querySelector("#climbPost");
 let phineasPost = document.querySelector("#phineasPost");
 let lordsPost = document.querySelector("#lordPost")
+let seasidePost = document.querySelector("#seasidePost")
 
 
 dominion.addEventListener('click', function(){
@@ -51,6 +54,16 @@ lords.addEventListener('click', function(){
     blogClicked(lordsPost);
 })
 
+golf.addEventListener('click', function(){
+    posts.classList.remove("Hide");
+    blogClicked(golfPost);
+})
+
+seaside.addEventListener('click', function(){
+    posts.classList.remove("Hide");
+    blogClicked(seasidePost);
+})
+
 
 function blogClicked(selected){
     thumbNails.classList.add("Hide");
@@ -70,6 +83,6 @@ backBTN.addEventListener('click', function(){
     climbPost.classList.add("Hide");
     phineasPost.classList.add("Hide");
     lordsPost.classList.add("Hide");
-    
+    golfPost.classList.add("Hide");
+    seasidePost.classList.add("Hide");
 })
-
