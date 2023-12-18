@@ -13,16 +13,16 @@ let phineas = document.querySelector("#Phin");
 let lords = document.querySelector("#Lords");
 let golf = document.querySelector("#Golf");
 let seaside = document.querySelector("#Seaside");
-
+let backpacking = document.querySelector("#Backpacking");
 
 let dominionPost = document.querySelector("#domiPost");
 let hikePost = document.querySelector("#hikePost");
 let ultimatePost = document.querySelector("#ultimatePost");
 let climbPost = document.querySelector("#climbPost");
 let phineasPost = document.querySelector("#phineasPost");
-let lordsPost = document.querySelector("#lordPost")
-let seasidePost = document.querySelector("#seasidePost")
-
+let lordsPost = document.querySelector("#lordPost");
+let seasidePost = document.querySelector("#seasidePost");
+let backpackingPost = document.querySelector("#backpackingPost");
 
 dominion.addEventListener('click', function(){
     posts.classList.remove("Hide");
@@ -64,6 +64,10 @@ seaside.addEventListener('click', function(){
     blogClicked(seasidePost);
 })
 
+backpacking.addEventListener('click', function(){
+    posts.classList.remove("Hide");
+    blogClicked(backpackingPost);
+})
 
 function blogClicked(selected){
     thumbNails.classList.add("Hide");
@@ -85,4 +89,5 @@ backBTN.addEventListener('click', function(){
     lordsPost.classList.add("Hide");
     golfPost.classList.add("Hide");
     seasidePost.classList.add("Hide");
+    backpackingPost.classList.add("Hide");
 })
