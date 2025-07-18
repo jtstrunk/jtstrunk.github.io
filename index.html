@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <title>Joshua Strunk</title>
 </head>
 <body>
@@ -28,52 +29,99 @@
       <div id="about">
         <img src="LinkedIn.png" class="selfResize">
         <div>
-          <p>Josh Strunk</p>
-          <p>Software Developer | Reliance Partners</p>
-          <p>joshstrunk226@gmail.com</p>
+          <p style="font-family: 'Roboto', sans-serif;">Josh Strunk</p>
+          <p style="font-family: 'Roboto', sans-serif;">Software Developer | Reliance Partners</p>
+          <p style="font-family: 'Roboto', sans-serif;">joshstrunk226@gmail.com</p>
         </div>
       </div>
     </div>
     <div id="bio">
       <div class="title">
-        <p>About Me</p>
+        <p style="font-family: 'Roboto', sans-serif;">About Me</p>
       </div>
       <div>
         <br>
-        <p id="about">
+        <p id="about" style="line-height: 1.4; ">
           I'm currently a Software Developer at Reliance Partners while living in Lynchburg, Virginia. I am a graduate 
           from Liberty University where I earned a degree in Computer Science with a cognate in Software Engineering
           but when I'm off my computer I love to play board games or be outside -- whether going on a hike, backpacking, 
           running, sailing, and rock climbing or playing outdoor sports; my favorites being pickleball and ultimate frisbee.
+          My preferred stack is with Vue on the frontend and Gleam on the backend, I also enjoy exploring other stacks such 
+          as Lustre frontend framework and C# and .NET for the backend. In addition, I have practical experience with SQL, Python, and Flask.
         </p>
       </div>
     </div>
     <div id="projects">
       <div class="title">
-        <p>Projects</p>
+        <p style="font-family: 'Roboto', sans-serif;">Projects</p>
       </div>
       <div>
         <br>
-        <p>Valhalla Board Game Tracker</p>
-        <p>
+        <!-- <p>Valhalla Tabletop</p> -->
+        <a onclick="openInNewTab()" style="text-decoration: none; color: black; font-size: large; cursor: pointer; font-family: 'Roboto', sans-serif;">Valhalla Tabletop</a>
+        <p style="line-height: 1.4;">
           &nbsp;&nbsp;&nbsp;&nbsp;A web applcation built to track play throughs of different popular board games and show users a complete lists of the games they play while calculating statistics about their most played, most won, and other information. Each game record stores unique information from that game so the data can be further analysised for future more depth statistics for each player. Users are able to add friends and view their profiles to see what games they are playing. 
         </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;Along with tracking game information other tools to aid in playing board games were created and added onto the site to expand use:</p>
-        <p>Dominion Card Viewer</p>
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;A tool created to view the cards in the game Dominion and its expansions and to change the showing cards based on a set of filters specific to the card types and categories. As well it has the ability to select up to 10 cards for a game and dynamically create a version of the Dominion Score Counter for the selected cards
-        </p>
-        <p>Dominion Score Counter</p>
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;A score tracking web application built to be used during a game of the popular deck building card game Dominion. Starting with a menu, the user is able to select specifics of the game: number of players, player names, and tailored cards used in a game. Once the specifics are chosen, individual score counters are created for each user.
-        </p>
-        <p>Munchkin Alternate Mode</p>
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;A web application built to facilitate playing an alternate version of rules for the card game Munchkin. This tool allows the user to select the number of players, enter custom player names, and select a desired game length range. Once the game is started, a timer is set within the selected range and the user is provided with a level tracker to show the winner once the timer ends.
-        </p>
+        <p style="line-height: 1.4;">&nbsp;&nbsp;&nbsp;&nbsp;Along with tracking game information other tools to aid in playing board games were created and added onto the site to expand use: Dominion Kingdom Generator, Score Counter, and Card Viewer, as well as Muchkin Alternate Mode.</p>
+        <p style="margin-bottom: 10px; font-family: 'Roboto', sans-serif;">Check it out here!</p>
+        <button onclick="openInNewTab()" style="width: 130px;
+          height: 32px; color: #fff !important; cursor: pointer;
+          background: #17a2b8; border: 2px solid #17a2b8;
+          outline: none; padding: 4px 7px; border-radius: 5px;
+          text-decoration: none; font-family: 'Roboto', sans-serif;">
+          Valhalla Tabletop</button>
       </div>
     </div>
   </div>
   <script src="app.js"></script>
 </body>
 </html>
+
+<script>
+  function openInNewTab() {
+    window.open('https://valhallatable.top/', '_blank');
+  }
+</script>
+
+<style>
+  @media (max-width: 700px) {
+  #selections {
+    padding: 4vw !important;
+    max-width: 98vw !important;
+  }
+  #about {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+  #about img.selfResize {
+    width: 65px !important;
+    height: 65px !important;
+    margin-bottom: 6px !important;
+  }
+  #bio, #projects {
+    margin-bottom: 16px !important;
+  }
+  #projects button {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #about img.selfResize {
+    width: 42px !important;
+    height: 42px !important;
+  }
+  #selections {
+    padding: 1vw !important;
+  }
+  .title p {
+    font-size: 1em !important;
+  }
+  #projects button {
+    font-size: 0.95em !important;
+    padding: 6px 2px !important;
+    height: 32px !important;
+  }
+}
+</style>
